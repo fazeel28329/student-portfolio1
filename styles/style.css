@@ -1,0 +1,252 @@
+/* UNIVERSITY STUDENT CLUBS PORTAL */
+
+/* GLOBAL STYLES */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --primary: #2563eb;
+    --dark: #172554;
+    --light: #eff6ff;
+    --text: #334155;
+    --muted: #64748b;
+    --white: #ffffff;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background: #f8fafc;
+    color: var(--text);
+    line-height: 1.6;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+.container {
+    width: min(1100px, 90%);
+    margin: auto;
+}
+
+/* HEADER AND NAVIGATION */
+header {
+    background: var(--white);
+    box-shadow: 0 2px 12px rgba(0,0,0,0.06);
+    position: sticky;
+    top: 0;
+    z-index: 10;
+}
+
+.navbar {
+    min-height: 75px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 20px;
+}
+
+.logo {
+    font-size: 21px;
+    font-weight: 800;
+    color: var(--primary);
+}
+
+.nav-links {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 22px;
+    list-style: none;
+}
+
+.nav-links a {
+    font-size: 14px;
+    font-weight: 600;
+}
+
+.nav-links a:hover,
+.nav-links a.active {
+    color: var(--primary);
+}
+
+/* COMMON COMPONENTS */
+.section {
+    padding: 65px 0;
+}
+
+.section-title {
+    text-align: center;
+    font-size: 32px;
+    color: var(--dark);
+    margin-bottom: 12px;
+}
+
+.section-intro {
+    text-align: center;
+    color: var(--muted);
+    max-width: 650px;
+    margin: 0 auto 35px;
+}
+
+.btn {
+    display: inline-block;
+    background: var(--primary);
+    color: white;
+    padding: 12px 22px;
+    border-radius: 7px;
+    font-weight: 700;
+    transition: 0.2s;
+}
+
+.btn:hover {
+    background: #1d4ed8;
+    transform: translateY(-2px);
+}
+
+.grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 22px;
+}
+
+.card {
+    background: white;
+    border-radius: 12px;
+    padding: 25px;
+    box-shadow: 0 5px 20px rgba(0,0,0,0.05);
+    border: 1px solid #e2e8f0;
+}
+
+.card h3 {
+    color: var(--dark);
+    margin-bottom: 10px;
+}
+
+.card p {
+    color: var(--muted);
+}
+
+/* FOOTER */
+footer {
+    background: var(--dark);
+    color: white;
+    text-align: center;
+    padding: 25px 0;
+    margin-top: 40px;
+}
+
+/* HOME PAGE STYLES */
+.home-hero {
+    background: linear-gradient(120deg, #172554, #2563eb);
+    color: white;
+    padding: 110px 0;
+}
+
+.home-hero h1 {
+    font-size: 52px;
+    line-height: 1.15;
+    margin: 18px 0;
+}
+
+.home-hero p {
+    max-width: 600px;
+    color: #dbeafe;
+    margin-bottom: 28px;
+}
+
+.hero-label {
+    background: rgba(255,255,255,0.15);
+    padding: 8px 14px;
+    border-radius: 20px;
+    font-size: 13px;
+}
+
+.secondary-btn {
+    background: white;
+    color: var(--primary);
+    margin-left: 10px;
+}
+
+.home-cta {
+    background: #dbeafe;
+    text-align: center;
+    padding: 55px 0;
+}
+
+.home-cta h2 {
+    color: var(--dark);
+    margin-bottom: 10px;
+}
+
+.home-cta p {
+    margin-bottom: 20px;
+}
+
+@media (max-width: 600px) {
+    .home-hero {
+        padding: 75px 0;
+    }
+
+    .home-hero h1 {
+        font-size: 36px;
+    }
+
+    .secondary-btn {
+        margin: 12px 0 0;
+    }
+}
+
+/* CLUBS PAGE STYLES */
+/* CLUBS_CSS_START */
+/* CLUBS_CSS_END */
+
+/* EVENTS PAGE STYLES */
+/* EVENTS_CSS_START */
+/* EVENTS_CSS_END */
+
+/* JOIN PAGE STYLES */
+/* JOIN_CSS_START */
+/* JOIN_CSS_END */
+
+/* HIGHLIGHTS PAGE STYLES */
+/* HIGHLIGHTS_CSS_START */
+/* HIGHLIGHTS_CSS_END */
+
+/* RESPONSIVE DESIGN */
+@media (max-width: 768px) {
+    .navbar {
+        flex-direction: column;
+        padding: 15px 0;
+    }
+
+    .nav-links {
+        justify-content: center;
+        gap: 12px;
+    }
+
+    .grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .section-title {
+        font-size: 26px;
+    }
+}
+
+@media (max-width: 500px) {
+    .grid {
+        grid-template-columns: 1fr;
+    }
+
+    .nav-links {
+        gap: 10px;
+    }
+
+    .logo {
+        font-size: 18px;
+    }
+}

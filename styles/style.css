@@ -250,3 +250,43 @@ footer {
         font-size: 18px;
     }
 }
+/* JOIN PAGE */
+.join-steps {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 22px;
+}
+.step-card { padding: 30px; }
+.step-number {
+  display: inline-block;
+  color: var(--primary);
+  font-size: 30px;
+  font-weight: 800;
+  margin-bottom: 12px;
+}
+.join-info {
+  background: var(--light);
+  margin-top: 45px;
+  padding: 35px;
+  border-radius: 12px;
+}
+.join-info h2 { color: var(--dark); margin-bottom: 15px; }
+.join-info ul { padding-left: 22px; }
+.join-info p { margin-top: 18px; }
+
+/* HIGHLIGHTS PAGE */
+.achievement-card {
+  text-align: center;
+  border-bottom: 4px solid var(--primary);
+}
+.achievement-icon {
+  font-size: 42px;
+  margin-bottom: 15px;
+}
+.achievement-card h3 { font-size: 19px; }
+
+@media (max-width: 600px) {
+  .join-steps { grid-template-columns: 1fr; }
+  .join-info { padding: 22px; }
+  .achievement-card { padding: 25px 18px; }
+}
